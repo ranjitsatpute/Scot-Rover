@@ -30,7 +30,7 @@ This project simulates the complete lifecycle of a Martian rock analysis mission
 The system follows a **Modular, Decoupled Architecture**, ensuring that every component is isolated and communicates over a standard ROS 2 network. This design mimics the rigorous software standards of flight software.
 
 ### Main Architecture Diagram
-![Main System Architecture](Architecture_diagrams/MAIN_ARCHITECTURE.png)
+![Main System Architecture](MAIN_ARCHITECTURE.png)
 
 ```mermaid
 graph TD
