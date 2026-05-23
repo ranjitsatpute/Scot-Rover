@@ -1,0 +1,20 @@
+# ROS 2 build artifacts
+build/
+install/
+log/
+
+# Python artifacts
+__pycache__/
+*.pyc
+
+# Project specific
+output/*.png
+output/*.log
+output/*.txt
+
+# Docker
+.docker/
+
+# IDE
+.vscode/
+.idea/
