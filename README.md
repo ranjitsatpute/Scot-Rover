@@ -74,11 +74,11 @@ Orchestrates the scientific workflow. It handles user requests, manages the stat
 
 ### 2. LIBS Sensor Simulator (The "Physics Engine")
 Simulates the physical interaction of a high-energy laser with Martian rock samples. It generates realistic spectral data based on NIST atomic emission lines, adding Gaussian noise to mimic real-world sensor imperfections.
-![LIBS Sensor Architecture](Architecture_diagrams/LIB_SENSOR_SIMULATOR_NODE_ARCHITECTURE.png)
+![LIBS Sensor Architecture](LIB_SENSOR_SIMULATOR_NODE_ARCHITECTURE.png)
 
 ### 3. Spectrum Analyzer (The "Chemist")
 Processes the raw spectral data using advanced signal processing algorithms (peak detection, background subtraction) to identify chemical elements (e.g., Fe, Si, Al) with high confidence.
-![Spectrum Analyzer Architecture](Architecture_diagrams/SPECTRUM_ANALYZER_NODE_ARCHITECTURE.png)
+![Spectrum Analyzer Architecture](SPECTRUM_ANALYZER_NODE_ARCHITECTURE.png)
 
 ---
 
