@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  ros2:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: libs_rover_ros2
+    environment:
+      - ROS_DOMAIN_ID=0
+      - DISPLAY=${DISPLAY:-:0}
+    volumes:
+      # Mount source for live development
+      - ./src:/ros2_ws/src:rw
+      # Mount output directory for spectrum plots
+      - ./output:/ros2_ws/output:rw
+    # Keep container running
+    stdin_open: true
+    tty: true
+    # Network mode for ROS 2 communication
+    network_mode: host
+    # Auto-start the launch file
+    command: ros2 launch libs_rover_pkg libs_demo.launch.py
