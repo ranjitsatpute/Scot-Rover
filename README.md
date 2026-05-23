@@ -70,7 +70,7 @@ graph TD
 
 ### 1. Measurement Controller (The "Brain")
 Orchestrates the scientific workflow. It handles user requests, manages the state machine, and coordinates the sensor and analyzer nodes to prevent deadlocks.
-![Measurement Controller Architecture](Architecture_diagrams/MEASUREMENT_CONTROLLER_NODE_ARCHITECTURE.png)
+![Measurement Controller Architecture](MEASUREMENT_CONTROLLER_NODE_ARCHITECTURE.png)
 
 ### 2. LIBS Sensor Simulator (The "Physics Engine")
 Simulates the physical interaction of a high-energy laser with Martian rock samples. It generates realistic spectral data based on NIST atomic emission lines, adding Gaussian noise to mimic real-world sensor imperfections.
