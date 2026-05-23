@@ -9,7 +9,7 @@
 
 > **A high-fidelity Digital Twin of the NASA Curiosity Rover, engineered for autonomous scientific exploration and simulated Laser-Induced Breakdown Spectroscopy (LIBS) analysis on Mars.**
 
-![Project Overview](PROJECT_OVERVIEW.png)
+![Project Overview](Architecture_diagrams/PROJECT_OVERVIEW.png)
 
 ---
 
@@ -30,7 +30,7 @@ This project simulates the complete lifecycle of a Martian rock analysis mission
 The system follows a **Modular, Decoupled Architecture**, ensuring that every component is isolated and communicates over a standard ROS 2 network. This design mimics the rigorous software standards of flight software.
 
 ### Main Architecture Diagram
-![Main System Architecture](MAIN_ARCHITECTURE.png)
+![Main System Architecture](Architecture_diagrams/MAIN_ARCHITECTURE.png)
 
 ```mermaid
 graph TD
@@ -70,15 +70,15 @@ graph TD
 
 ### 1. Measurement Controller (The "Brain")
 Orchestrates the scientific workflow. It handles user requests, manages the state machine, and coordinates the sensor and analyzer nodes to prevent deadlocks.
-![Measurement Controller Architecture](MEASUREMENT_CONTROLLER_NODE_ARCHITECTURE.png)
+![Measurement Controller Architecture](Architecture_diagrams/MEASUREMENT_CONTROLLER_NODE_ARCHITECTURE.png)
 
 ### 2. LIBS Sensor Simulator (The "Physics Engine")
 Simulates the physical interaction of a high-energy laser with Martian rock samples. It generates realistic spectral data based on NIST atomic emission lines, adding Gaussian noise to mimic real-world sensor imperfections.
-![LIBS Sensor Architecture](LIB_SENSOR_SIMULATOR_NODE_ARCHITECTURE.png)
+![LIBS Sensor Architecture](Architecture_diagrams/LIB_SENSOR_SIMULATOR_NODE_ARCHITECTURE.png)
 
 ### 3. Spectrum Analyzer (The "Chemist")
 Processes the raw spectral data using advanced signal processing algorithms (peak detection, background subtraction) to identify chemical elements (e.g., Fe, Si, Al) with high confidence.
-![Spectrum Analyzer Architecture](SPECTRUM_ANALYZER_NODE_ARCHITECTURE.png)
+![Spectrum Analyzer Architecture](Architecture_diagrams/SPECTRUM_ANALYZER_NODE_ARCHITECTURE.png)
 
 ---
 
