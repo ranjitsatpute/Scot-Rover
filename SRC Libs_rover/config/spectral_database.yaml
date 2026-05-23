@@ -1,0 +1,94 @@
+samples:
+  basalt:
+    description: "Volcanic rock common on Mars"
+    elements:
+      - symbol: "Fe"
+        weight: 0.8
+      - symbol: "Si"
+        weight: 0.7
+      - symbol: "Mg"
+        weight: 0.6
+      - symbol: "Ca"
+        weight: 0.5
+      - symbol: "Ti"
+        weight: 0.3
+  
+  granite:
+    description: "Common Earth continental rock"
+    elements:
+      - symbol: "Si"
+        weight: 0.9
+      - symbol: "Al"
+        weight: 0.7
+      - symbol: "K"
+        weight: 0.6
+      - symbol: "Na"
+        weight: 0.5
+      - symbol: "Fe"
+        weight: 0.1
+
+  iron_ore:
+    description: "Hematite or Magnetite rich rock"
+    elements:
+      - symbol: "Fe"
+        weight: 1.0
+      - symbol: "O"
+        weight: 0.6
+  
+  limestone:
+    description: "Sedimentary rock composed of calcium carbonate"
+    elements:
+      - symbol: "Ca"
+        weight: 0.9
+      - symbol: "C"
+        weight: 0.5
+      - symbol: "Mg"
+        weight: 0.2
+
+# National Institute of Standards and Technology (NIST) Atomic Spectra Database Lines (Simplified strongest lines in nm)
+element_signatures:
+  Fe:  # Iron
+    - 374.55
+    - 382.04
+    - 404.58
+    - 438.35
+  
+  Si:  # Silicon
+    - 251.61
+    - 288.16
+    - 390.55
+  
+  Ca:  # Calcium
+    - 393.37
+    - 396.85
+    - 422.67
+  
+  Mg:  # Magnesium
+    - 279.55
+    - 280.27
+    - 285.21
+  
+  Al:  # Aluminum
+    - 309.27
+    - 394.40
+    - 396.15
+  
+  Ti:  # Titanium
+    - 334.94
+    - 336.12
+  
+  K:   # Potassium
+    - 766.49
+    - 769.90
+  
+  Na:  # Sodium
+    - 588.99
+    - 589.59
+  
+  C:   # Carbon (Lines often weak in air, but included for simulation)
+    - 247.86
+    - 909.48
+  
+  O:   # Oxygen
+    - 777.19
+    - 777.41
