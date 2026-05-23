@@ -1,0 +1,19 @@
+# Request a LIBS measurement
+
+# Type of sample to simulate (e.g., "basalt", "granite", "iron_ore")
+string sample_type
+
+# Laser power level (0-100)
+float64 laser_power_percent
+
+---
+# Response
+
+# Whether the measurement was triggered successfully
+bool success
+
+# Informational message
+string message
+
+# The generated spectrum (optional return, usually published on topic)
+SpectrumData spectrum
